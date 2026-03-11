@@ -1,0 +1,36 @@
+#$ TITLE: Leah-SAR Extreme Environment
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: SAR, rescue, maritime, GPS, failsafe, low power, extreme
+#$ AUTHOR: Kloudz805
+#$ DESCRIPTION: Optimizes for field operations and SAR missions.
+#$ DESCRIPTION: Configures low-resource logging, aggressive OSD warnings
+#$ DESCRIPTION: for signal degradation, and GPS rescue for maritime/high-interference environments.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/570
+#$ WARNING: Requires GPS module. Failsafe will trigger GPS rescue mode.
+#$ DISCLAIMER: Intended for experienced pilots in SAR/field operations.
+
+# --- LOW RESOURCE LOGGING ---
+set blackbox_mode = NORMAL
+set blackbox_rate_num = 1
+set blackbox_rate_denom = 32
+
+# --- LINK QUALITY (LQ) & RSSI OSD WARNINGS ---
+set osd_rssi_alarm = 35
+set osd_link_quality_alarm = 50
+set osd_rssi_dbm_alarm = -100
+
+# --- VTX (VIDEO TRANSMITTER) OPTIMIZATION ---
+set vtx_low_power_disarm = ON
+set vtx_freq = 5769
+
+# --- FAILSAFE BEHAVIOR (GPS RESCUE FOR MARITIME/SAR) ---
+set failsafe_procedure = RESCUE
+set failsafe_delay = 10
+
+# --- GPS RESCUE PARAMETERS ---
+set gps_rescue_min_dth = 30
+set gps_rescue_return_alt = 50
+
+save
