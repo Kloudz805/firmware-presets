@@ -21,9 +21,12 @@ set osd_rssi_alarm = 35
 set osd_link_quality_alarm = 50
 set osd_rssi_dbm_alarm = -100
 
-# --- VTX (VIDEO TRANSMITTER) OPTIMIZATION ---
+# --- VTX SETTINGS ---
+# VTX set to Raceband 4 (5769) for baseline team standardization 
+# and separation from coastal Wi-Fi. Adjust for local regulations.
 set vtx_low_power_disarm = ON
 set vtx_freq = 5769
+
 
 # --- FAILSAFE BEHAVIOR (GPS RESCUE FOR MARITIME/SAR) ---
 set failsafe_procedure = RESCUE
