@@ -27,10 +27,10 @@ set vtx_freq = 5769
 
 # --- FAILSAFE BEHAVIOR (GPS RESCUE FOR MARITIME/SAR) ---
 set failsafe_procedure = RESCUE
-set failsafe_delay = 10
+set failsafe_delay = 15
 
 # --- GPS RESCUE PARAMETERS ---
 set gps_rescue_min_dth = 30
-set gps_rescue_return_alt = 50
+set gps_rescue_return_alt = 100
 
 save
