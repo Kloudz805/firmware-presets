@@ -1,8 +1,8 @@
-#$ TITLE: Leah-SAR Extreme Environment
-#$ FIRMWARE_VERSION: 2025.12
-#$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
-#$ KEYWORDS: SAR, rescue, maritime, GPS, failsafe, low power, extreme
+#$ AUTHOR: Kloudz805
+#$ KEYWORDS: Leah-SAR, Extreme Environment, Signal Reliability, Search and Rescue
+#$ DESCRIPTION: Maximizes signal awareness and optimizes resources for reliable operation in high-interference or maritime environments. Optimized for Betaflight 4.4+.
+#$ DISCLAIMER: Test in a controlled environment before mission deployment.
+
 #$ AUTHOR: Kloudz805
 #$ DESCRIPTION: Optimizes for field operations and SAR missions.
 #$ DESCRIPTION: Configures low-resource logging, aggressive OSD warnings
@@ -37,3 +37,4 @@ set gps_rescue_min_dth = 30
 set gps_rescue_return_alt = 100
 
 save
+
